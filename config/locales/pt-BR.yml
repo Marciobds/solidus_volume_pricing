@@ -1,0 +1,37 @@
+---
+pt-BR:
+  spree:
+    add_volume_price: Adicionar preço por volume
+    position: Posição
+    discount_type: Tipo de Desconto
+    range: Faixa
+    role: Perfil
+    volume_prices: Preços de Volume
+    volume_price_model: Modelo de preço por volume
+    new_volume_price_model: Novo modelo de preço por volume
+    volume_price_model_edit: Editar modelo de preço por volume
+    volume_pricing: Preço por volume
+    price_discount: Desconto de preço
+    percent_discount: Desconto percentual
+    bulk_discount: Desconto em massa
+    total_price: Preço total
+    admin:
+      tab:
+        volume_price_models: Modelos de preço por volume
+  activerecord:
+    models:
+      spree/volume_price:
+        one: Preço do Volume
+        other: Preços de Volume
+      spree/volume_price_model:
+        one: Modelo de preço por volume
+        other: Modelos de preço por volume
+    errors:
+      models:
+        spree/volume_price:
+          attributes:
+            discount_type:
+              inclusion: '%{value} não é um tipo de preço por volume válido'
+      messages:
+        could_not_convert_to_range: "Não foi possível converter para intervalo: %{range_string}"
+        must_be_in_format: 'deve estar em um dos seguintes formatos: (a..b), (a...b), (a+)'
